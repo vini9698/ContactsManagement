@@ -9,7 +9,7 @@ This project demonstrates expertise in Angular and ASP.NET Core, featuring a use
 - **ASP.NET Core**: Used for creating a RESTful API to manage contacts.
 - **JSON**: Contact data is stored in a JSON file.
 - **Dependency Injection**: Applied for managing logging and services.
-- **Detailed Logging**: Logs requests, errors, and unauthorized access attempts to aid debugging and monitoring.
+
 
 ## Features
 
@@ -27,9 +27,7 @@ This project demonstrates expertise in Angular and ASP.NET Core, featuring a use
   - `PUT /Contact/UpdateContact`: Updates an existing contact.
   - `DELETE /Contact/DeleteContact`: Deletes a contact by ID.
 
-- **Custom Middleware**:
-  - **Authorization Middleware**: Manages authorization tokens and provides detailed error responses (404, 401, 500).
-  - **Global Expection Middleware**:  It intercepts unhandled exceptions that occur during the processing of HTTP requests, allowing you to log the error, format a response, and potentially redirect the user or provide a user-friendly error message.
+
 
 ## Setup Instructions
 
@@ -38,35 +36,37 @@ Ensure the following are installed:
 
 - **Node.js** (version 16 or higher): Download from [nodejs.org](https://nodejs.org).
 - **npm**: Comes bundled with Node.js. Verify installation by running:
-  ```bash
+  ```visual studio
   node -v
   npm -v
   ```
 
 ### Installation
 
-1. **Clone the Repository**:
-   ```bash
-   git clone <repository-url>
-   cd <repository-folder>
+1. **Download the Repository**:
+   ```Download Repository from <repository-url>
+	Extract the Zip file
    ```
 
 2. **Set Up Angular Client**:
    ```bash
-   cd clientApp
+   cd ContactsManagement-main
+   cd ContactManagement.Web
    npm install
    ```
 
 3. **Set Up ASP.NET Core API**:
    - Navigate back to the root directory:
-     ```bash
-     cd ..
      ```
-   - Restore dependencies:
-     ```bash
-     dotnet restore
+	 Go to ContactsManagement-main
+	 Open solution file in visual studio
+     ```
+   - set startup project:
+     ```
+	 Go to Visual studio=>Solution Explorer
+	 Right Click on ContactManagement.API=>click Set as StartUp Project
      ```
    - Run the API application:
-     ```bash
-     dotnet run
+     ```
+	 Choose 'IIS Express' and click to Run
      ```
